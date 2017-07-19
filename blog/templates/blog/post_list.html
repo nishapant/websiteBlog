@@ -8,12 +8,12 @@
         <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     </head>
     <body>
-        <div>
+        <div class="page-header">
             <h1><a href="">Django Girls Blog</a></h1>
         </div>
 
         {% for post in posts %}
-          <div>
+          <div class="post">
               <h1><a href="">{{ post.title }}</a></h1>
               <p>{{ post.text|linebreaksbr }}</p>
               <p>published: {{ post.published_date }}</p>
